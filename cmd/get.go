@@ -18,11 +18,7 @@ const (
 )
 
 type Token struct {
-		//Scope string     // `json:"scope"`
 		AccessToken string // `json:"accessToken"`
-		//TokenType string // `json:"tokenType"`
-		//Roles []string   // `json:"roles"`
-		//ExpiresIn int    // `json:"expiresIn"`
 }
 
 var versionCmd = &cobra.Command{

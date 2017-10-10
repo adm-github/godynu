@@ -71,6 +71,7 @@ var addCmd = &cobra.Command{
 		var prettyJSON bytes.Buffer
 		error := json.Indent(&prettyJSON, respBody, "", "\t")
 		if error != nil {
+			fmt.Println(string(respBody))
 			fmt.Println("JSON parse error:", error)
 			return
 		}
